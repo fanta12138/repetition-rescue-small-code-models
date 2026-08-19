@@ -1,0 +1,58 @@
+{
+  "direct": {
+    "n": 50,
+    "success_rate": 0.84,
+    "successes": 42,
+    "avg_iterations": 1,
+    "avg_tokens": 503.34,
+    "total_tokens": 25167,
+    "avg_wall_time_sec": 0.9750045251846313,
+    "patch_apply_rate": 1.0,
+    "extract_failures": 0,
+    "budget_exceeded": 0,
+    "localization_rate": 1,
+    "avg_files_changed": 1
+  },
+  "no_feedback": {
+    "n": 50,
+    "success_rate": 0.94,
+    "successes": 47,
+    "avg_iterations": 1.34,
+    "avg_tokens": 697.34,
+    "total_tokens": 34867,
+    "avg_wall_time_sec": 1.3622314357757568,
+    "patch_apply_rate": 1.0,
+    "extract_failures": 0,
+    "budget_exceeded": 0,
+    "localization_rate": 1,
+    "avg_files_changed": 1
+  },
+  "repair": {
+    "n": 50,
+    "success_rate": 0.94,
+    "successes": 47,
+    "avg_iterations": 1.34,
+    "avg_tokens": 822.72,
+    "total_tokens": 41136,
+    "avg_wall_time_sec": 1.3975855588912964,
+    "patch_apply_rate": 1.0,
+    "extract_failures": 0,
+    "budget_exceeded": 0,
+    "localization_rate": 1,
+    "avg_files_changed": 1
+  },
+  "repair_structured": {
+    "n": 50,
+    "success_rate": 0.94,
+    "successes": 47,
+    "avg_iterations": 1.34,
+    "avg_tokens": 712.84,
+    "total_tokens": 35642,
+    "avg_wall_time_sec": 1.3684324645996093,
+    "patch_apply_rate": 1.0,
+    "extract_failures": 0,
+    "budget_exceeded": 0,
+    "localization_rate": 1,
+    "avg_files_changed": 1
+  }
+}
