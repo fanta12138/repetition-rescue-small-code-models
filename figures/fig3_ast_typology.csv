@@ -1,0 +1,22 @@
+series,coder_idx,dist_to_step1,dist_to_prev
+rescued switch: 7B v4_08 diverse,1,0.0,
+rescued switch: 7B v4_08 diverse,2,0.0,0.0
+rescued switch: 7B v4_08 diverse,3,0.6525,0.6525
+rescued switch: 3B v4_08 diverse s2,1,0.0,
+rescued switch: 3B v4_08 diverse s2,2,0.0,0.0
+rescued switch: 3B v4_08 diverse s2,3,0.6525,0.6525
+tinkering (no switch): 7B v5_09 diverse s0,1,0.0,
+tinkering (no switch): 7B v5_09 diverse s0,2,0.1664,0.1664
+tinkering (no switch): 7B v5_09 diverse s0,3,0.1664,0.0
+tinkering (no switch): 7B v5_09 diverse s0,4,0.2769,0.2794
+tinkering (no switch): 7B v5_09 diverse s0,5,0.2769,0.0
+verbatim lock (no switch): 7B v4_01 structured,1,0.0,
+verbatim lock (no switch): 7B v4_01 structured,2,0.0,0.0
+verbatim lock (no switch): 7B v4_01 structured,3,0.0,0.0
+verbatim lock (no switch): 7B v4_01 structured,4,0.0,0.0
+verbatim lock (no switch): 7B v4_01 structured,5,0.0,0.0
+switch w/o rescue: 3B v2_13 diverse s0,1,0.0,
+switch w/o rescue: 3B v2_13 diverse s0,2,0.0025,0.0025
+switch w/o rescue: 3B v2_13 diverse s0,3,0.3831,0.3816
+switch w/o rescue: 3B v2_13 diverse s0,4,0.3831,0.0
+switch w/o rescue: 3B v2_13 diverse s0,5,0.3831,0.0

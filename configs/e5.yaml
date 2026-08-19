@@ -1,0 +1,32 @@
+# E5 main configuration: intervention arms on the frozen locked subset.
+# Locked subset (from E5_screen, structured arm only, preregistered criterion):
+#   v5_07 (both seeds), v5_09 (both seeds), v5_04 (seed 1 only;
+#   seed 0 shows drift-not-repeat and counts as a separate unit).
+# Identical budget/temperature to e5_screen.yaml.
+
+experiment: E5
+
+llm:
+  base_url: http://localhost:8000/v1
+  api_key: EMPTY
+  model: Qwen/Qwen2.5-Coder-7B-Instruct-AWQ
+  temperature: 0.2
+  max_tokens: 4096
+
+budget:
+  max_iterations: 5
+  max_tokens_per_instance: 50000
+  feedback_max_chars: 6000
+
+sandbox:
+  backend: subprocess
+  timeout_sec: 20
+  docker_image: python:3.11-slim
+
+tasks:
+  selfbuilt_limit: 20
+  swe_subset_path: data/swe_pilot_subset.jsonl
+
+modes: [repair_structured, repair_diverse, repair_nudge_weak]
+
+output_dir: runs/E5

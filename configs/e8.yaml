@@ -1,0 +1,28 @@
+# E8 external-benchmark lock-in prevalence on HumanEval
+# (preregistered 2026-08-18). Generate-test-revise loop; frozen
+# signature-prepend guard in scripts/run_e8_humaneval.py.
+
+experiment: E8
+
+llm:
+  base_url: http://localhost:8000/v1
+  api_key: EMPTY
+  model: Qwen/Qwen2.5-Coder-7B-Instruct-AWQ
+  temperature: 0.2
+  max_tokens: 4096
+
+budget:
+  max_iterations: 5
+  max_tokens_per_instance: 50000
+  feedback_max_chars: 6000
+
+sandbox:
+  backend: subprocess
+  timeout_sec: 15          # preregistered: HumanEval tests are fast
+  docker_image: python:3.11-slim
+
+humaneval_path: data/humaneval.jsonl
+
+modes: [direct, repair_structured, repair_diverse, repair_nudge_weak]
+
+output_dir: runs/E8

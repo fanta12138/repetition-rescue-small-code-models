@@ -1,0 +1,33 @@
+# E7 compute-matched best-of-N baseline (preregistered 2026-08-18).
+# Loop arms identical protocol to E4v4; best-of-N budgets matched per
+# instance to the paired diverse-arm token spend (see RESEARCH_LOG).
+
+experiment: E7
+
+llm:
+  base_url: http://localhost:8000/v1
+  api_key: EMPTY
+  model: Qwen/Qwen2.5-Coder-7B-Instruct-AWQ
+  temperature: 0.2
+  max_tokens: 4096
+
+budget:
+  max_iterations: 5
+  max_tokens_per_instance: 50000
+  feedback_max_chars: 6000
+
+sandbox:
+  backend: subprocess
+  timeout_sec: 20
+  docker_image: python:3.11-slim
+
+tasks:
+  selfbuilt_limit: 20
+
+bestofn:
+  n_max: 10
+  temp_regime_temperature: 0.8
+
+modes: [repair_structured, repair_diverse, repair_nudge_weak]
+
+output_dir: runs/E7

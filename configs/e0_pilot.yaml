@@ -1,0 +1,30 @@
+# E0 pilot experiment configuration
+# All token budgets and iteration caps live here so experiments are comparable.
+
+experiment: E0
+
+llm:
+  base_url: http://localhost:8000/v1   # vLLM OpenAI-compatible endpoint
+  api_key: EMPTY
+  model: Qwen/Qwen2.5-Coder-7B-Instruct-AWQ
+  temperature: 0.2
+  max_tokens: 4096                       # per LLM call
+
+budget:
+  max_iterations: 5                      # max repair iterations (LLM calls) per instance
+  max_tokens_per_instance: 50000         # hard token budget per instance
+  feedback_max_chars: 6000               # ~2K tokens of compressed test feedback
+
+sandbox:
+  backend: subprocess                    # subprocess | docker
+  timeout_sec: 20                        # 合法修复的测试均 <1s；快速暴露死循环修复
+  docker_image: python:3.11-slim
+
+tasks:
+  selfbuilt_limit: 20                    # use all 20 self-built debug tasks
+  swe_subset_path: data/swe_pilot_subset.jsonl
+
+# E0 arms: (a) direct, (b) repair, (c) random-reflection control, (d) no-feedback
+modes: [direct, repair, random_reflection, no_feedback]
+
+output_dir: runs/E0

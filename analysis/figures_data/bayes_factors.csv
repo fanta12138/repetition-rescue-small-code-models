@@ -1,0 +1,20 @@
+test,b,c,n_units,BF10,BF01,interpretation
+"7B repair vs no_feedback (E0v2s5, feedback content)",2,1,100,0.6667,1.5,inconclusive
+"3B repair vs no_feedback (E6, R1)",6,0,100,9.1429,0.1094,moderate for H1
+7B repair vs direct (retry effect),11,2,100,7.5018,0.1333,moderate for H1
+3B repair vs direct (retry effect),12,0,100,315.0769,0.0032,decisive for H1
+7B diverse vs structured on locked (E4v2lock),1,0,1,1.0,1.0,inconclusive
+7B diverse vs structured on locked (E4v4),1,0,3,1.0,1.0,inconclusive
+7B diverse vs structured on locked (E4v3lock),0,0,1,1.0,1.0,inconclusive
+7B diverse vs structured on locked (E5),1,0,5,1.0,1.0,inconclusive
+3B diverse vs structured on locked (E6lock),3,0,5,2.0,0.5,inconclusive
+3B diverse vs structured on locked (E6v2),0,0,15,1.0,1.0,inconclusive
+7B diverse vs weak on locked (E4v2lock),1,0,1,1.0,1.0,inconclusive
+7B diverse vs weak on locked (E4v4),1,0,3,1.0,1.0,inconclusive
+7B diverse vs weak on locked (E4v3lock),0,0,1,1.0,1.0,inconclusive
+7B diverse vs weak on locked (E5),1,0,5,1.0,1.0,inconclusive
+3B diverse vs weak on locked (E6lock),3,0,5,2.0,0.5,inconclusive
+3B diverse vs weak on locked (E6v2),0,0,15,1.0,1.0,inconclusive
+7B POOLED diverse vs structured (locked),3,0,3,2.0,0.5,inconclusive
+3B POOLED diverse vs structured (locked),3,0,3,2.0,0.5,inconclusive
+7B POOLED diverse vs weak (locked),3,0,3,2.0,0.5,inconclusive

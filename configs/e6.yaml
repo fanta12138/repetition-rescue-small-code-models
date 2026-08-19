@@ -1,0 +1,30 @@
+# E6 cross-model validation: second model = Qwen2.5-Coder-3B-Instruct-AWQ.
+# Everything else identical to e5.yaml (temp/budget/prompts) so that any
+# behavioral difference is attributable to the model only.
+
+experiment: E6
+
+llm:
+  base_url: http://localhost:8000/v1
+  api_key: EMPTY
+  model: Qwen/Qwen2.5-Coder-3B-Instruct-AWQ
+  temperature: 0.2
+  max_tokens: 4096
+
+budget:
+  max_iterations: 5
+  max_tokens_per_instance: 50000
+  feedback_max_chars: 6000
+
+sandbox:
+  backend: subprocess
+  timeout_sec: 20
+  docker_image: python:3.11-slim
+
+tasks:
+  selfbuilt_limit: 20
+  swe_subset_path: data/swe_pilot_subset.jsonl
+
+modes: [direct, repair, no_feedback, repair_structured, repair_diverse, repair_nudge_weak]
+
+output_dir: runs/E6v2

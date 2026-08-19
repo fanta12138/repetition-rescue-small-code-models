@@ -1,0 +1,31 @@
+# E5 screening configuration: identify which v5 shallow-lock candidates
+# actually induce repetition lock-in under repair_structured only
+# (preregistration requirement: subset selection must use baseline-arm data).
+# Identical budget/temperature to e0_pilot.yaml / e4_screen.yaml.
+
+experiment: E5_screen
+
+llm:
+  base_url: http://localhost:8000/v1
+  api_key: EMPTY
+  model: Qwen/Qwen2.5-Coder-7B-Instruct-AWQ
+  temperature: 0.2
+  max_tokens: 4096
+
+budget:
+  max_iterations: 5
+  max_tokens_per_instance: 50000
+  feedback_max_chars: 6000
+
+sandbox:
+  backend: subprocess
+  timeout_sec: 20
+  docker_image: python:3.11-slim
+
+tasks:
+  selfbuilt_limit: 20
+  swe_subset_path: data/swe_pilot_subset.jsonl
+
+modes: [repair_structured]
+
+output_dir: runs/E5_screen
