@@ -1,0 +1,18 @@
+{
+  "experiment": "E7",
+  "dataset": "v4",
+  "model": "Qwen/Qwen2.5-Coder-7B-Instruct-AWQ",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "phase": "bestofn",
+  "bestofn": {
+    "n_max": 10,
+    "temp_regime_temperature": 0.8
+  },
+  "started_at": "2026-08-18 15:04:46"
+}
