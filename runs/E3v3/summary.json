@@ -1,0 +1,58 @@
+{
+  "repair": {
+    "n": 50,
+    "success_rate": 0.94,
+    "successes": 47,
+    "avg_iterations": 1.34,
+    "avg_tokens": 822.72,
+    "total_tokens": 41136,
+    "avg_wall_time_sec": 1.3975855588912964,
+    "patch_apply_rate": 1.0,
+    "extract_failures": 0,
+    "budget_exceeded": 0,
+    "localization_rate": 1,
+    "avg_files_changed": 1
+  },
+  "repair_diverse": {
+    "n": 50,
+    "success_rate": 0.94,
+    "successes": 47,
+    "avg_iterations": 1.34,
+    "avg_tokens": 720.2,
+    "total_tokens": 36010,
+    "avg_wall_time_sec": 1.3206908512115478,
+    "patch_apply_rate": 1.0,
+    "extract_failures": 0,
+    "budget_exceeded": 0,
+    "localization_rate": 1,
+    "avg_files_changed": 1
+  },
+  "repair_structured": {
+    "n": 50,
+    "success_rate": 0.94,
+    "successes": 47,
+    "avg_iterations": 1.34,
+    "avg_tokens": 712.84,
+    "total_tokens": 35642,
+    "avg_wall_time_sec": 1.3684324645996093,
+    "patch_apply_rate": 1.0,
+    "extract_failures": 0,
+    "budget_exceeded": 0,
+    "localization_rate": 1,
+    "avg_files_changed": 1
+  },
+  "repair_tempbump": {
+    "n": 50,
+    "success_rate": 0.94,
+    "successes": 47,
+    "avg_iterations": 1.34,
+    "avg_tokens": 714.34,
+    "total_tokens": 35717,
+    "avg_wall_time_sec": 1.3223718357086183,
+    "patch_apply_rate": 1.0,
+    "extract_failures": 0,
+    "budget_exceeded": 0,
+    "localization_rate": 1,
+    "avg_files_changed": 1
+  }
+}
