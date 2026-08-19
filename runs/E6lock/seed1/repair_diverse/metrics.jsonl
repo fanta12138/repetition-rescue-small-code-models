@@ -1,0 +1,1 @@
+{"instance_id": "v4_08", "mode": "repair_diverse", "success": false, "iterations": 5, "llm_calls": 5, "prompt_tokens": 3037, "completion_tokens": 1305, "total_tokens": 4342, "wall_time": 8.244805335998535, "patch_applied_count": 5, "extract_failures": 0, "error_type": null, "repetition_events": 2, "interventions": 2}

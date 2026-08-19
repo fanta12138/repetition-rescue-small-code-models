@@ -1,0 +1,21 @@
+{
+  "experiment": "E5",
+  "model": "Qwen/Qwen2.5-Coder-7B-Instruct-AWQ",
+  "dataset": "v5",
+  "modes": [
+    "repair_structured",
+    "repair_diverse",
+    "repair_nudge_weak"
+  ],
+  "seeds": [
+    0,
+    1
+  ],
+  "n_tasks": 3,
+  "budget": {
+    "max_iterations": 5,
+    "max_tokens_per_instance": 50000,
+    "feedback_max_chars": 6000
+  },
+  "started_at": "2026-08-17 23:43:52"
+}
