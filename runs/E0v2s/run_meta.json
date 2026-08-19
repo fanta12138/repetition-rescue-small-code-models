@@ -1,0 +1,23 @@
+{
+  "experiment": "E0",
+  "model": "Qwen/Qwen2.5-Coder-7B-Instruct-AWQ",
+  "dataset": "v2",
+  "modes": [
+    "direct",
+    "repair",
+    "random_reflection",
+    "no_feedback"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "n_tasks": 20,
+  "budget": {
+    "max_iterations": 5,
+    "max_tokens_per_instance": 50000,
+    "feedback_max_chars": 6000
+  },
+  "started_at": "2026-08-17 19:17:45"
+}

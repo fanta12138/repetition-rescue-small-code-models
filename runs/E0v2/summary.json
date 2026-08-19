@@ -1,0 +1,50 @@
+{
+  "direct": {
+    "n": 20,
+    "success_rate": 0.85,
+    "successes": 17,
+    "avg_iterations": 1,
+    "avg_tokens": 408.45,
+    "total_tokens": 8169,
+    "avg_wall_time_sec": 1.1827670335769653,
+    "patch_apply_rate": 1.0,
+    "extract_failures": 0,
+    "budget_exceeded": 0
+  },
+  "no_feedback": {
+    "n": 20,
+    "success_rate": 0.95,
+    "successes": 19,
+    "avg_iterations": 1.25,
+    "avg_tokens": 578.65,
+    "total_tokens": 11573,
+    "avg_wall_time_sec": 1.49279465675354,
+    "patch_apply_rate": 1.0,
+    "extract_failures": 0,
+    "budget_exceeded": 0
+  },
+  "random_reflection": {
+    "n": 20,
+    "success_rate": 0.95,
+    "successes": 19,
+    "avg_iterations": 1.4,
+    "avg_tokens": 652.25,
+    "total_tokens": 13045,
+    "avg_wall_time_sec": 1.695030927658081,
+    "patch_apply_rate": 1.0,
+    "extract_failures": 0,
+    "budget_exceeded": 0
+  },
+  "repair": {
+    "n": 20,
+    "success_rate": 0.95,
+    "successes": 19,
+    "avg_iterations": 1.35,
+    "avg_tokens": 747.25,
+    "total_tokens": 14945,
+    "avg_wall_time_sec": 1.66375173330307,
+    "patch_apply_rate": 1.0,
+    "extract_failures": 0,
+    "budget_exceeded": 0
+  }
+}
